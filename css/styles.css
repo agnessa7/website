@@ -1,31 +1,46 @@
-h1{
-    color: red;
-}
+
+
 th{
     color: red;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
-h3{
-    color: tomato;
-    border: 3px dotted blue;
 
-}
+
 li{
     color: purple;
 }
+
 td{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
 }
-a{
-    border: 2px solid red;
-}
+
 img{
-    height: 300px;
-    width: auto;
+    height: 700px;
+    width: 1035px;
 
     border: 20px;
 }
 
+table,th,tr,td{
+    border: 1px solid green
+}
 
+.cup-measure{
+    color: coral
+}
+
+.lb-measure{
+    color: purple;
+}
+
+#tbsp-measure{
+    color: lightseagreen;
+}
+
+.header{
+    color: firebrick;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ 

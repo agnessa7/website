@@ -6,16 +6,42 @@
 <head>
     <!--Here is where we set up shop, we link any external javascript and css files here
     and we also set guidelines defining houw our webpage should respond based on different devices and criteria-->
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel= "stylesheet" href="./css/styles.css">
+<script src="./javascript/index.js"></script>
 <title>My First Website</title>
 </head>
 <body>
-<h1>Welcome to my recipe website!!!</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mystical Pizzarea</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.roundtablepizza.com/" target="_blank">Recipie</a>
+            </li>
+           
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
 
 <br>
 
 
-<h2>Here is a table of the different ingredients that we'll need for the pizza</h2>
+<h2 class="header">Here is a table of the different ingredients that we'll need for the pizza</h2>
 
 <table>
 <tr>
@@ -23,59 +49,68 @@
 <th>Measurements</th>  
 </tr>
 <tr>
-    <td>dough</td>
-    <td>1 lb</td>
+    <td class="lb-measure">dough</td>
+    <td class="lb-measure">1 lb</td>
 </tr>
 
 <tr>
-    <td>olive oil</td>
-    <td>1 cup</td>
+    <td class="cup-measure">olive oil</td>
+    <td class="cup-measure">1 cup</td>
 </tr>
 
 <tr>
-    <td>kosher salt</td>
-    <td>1 tbsp.</td>
+    <td id="tbsp-measure">kosher salt</td>
+    <td id="tbsp-measure">1 tbsp.</td>
 </tr>
 
 <tr>
-    <td>Parmasean Cheese</td>
-    <td>2 cups</td>
+    <td class="cup-measure">Parmasean Cheese</td>
+    <td class="cup-measure">2 cups</td>
 </tr>
 
 <tr>
-    <td>Mozzerella Cheese</td>
-    <td>1/2 lb</td>
+    <td class="lb-measure">Mozzerella Cheese</td>
+    <td class="lb-measure">1/2 lb</td>
 </tr>
 
 <tr>
-    <td>Pepporoni</td>
-    <td>1/4 cup</td>
+    <td class="cup-measure">Pepporoni</td>
+    <td class="cup-measure">1/4 cup</td>
 </tr>
 
 <tr>
-    <td>Chicken</td>
-    <td>1/4 lb</td>
+    <td class="lb-measure">Chicken</td>
+    <td class="lb-measure">1/4 lb</td>
 </tr>
 
 <tr>
-    <td>bacon</td>
-    <td>1/8 lb</td>
+    <td class="lb-measure">bacon</td>
+    <td class="lb-measure">1/8 lb</td>
 </tr>
 
 <tr>
-    <td>Ranch</td>
-    <td>1 cup</td>
+    <td class="cup-measure">Ranch</td>
+    <td class="cup-measure">1 cup</td>
 </tr>
 
 </table>
 
+<button onclick="displayAlert()">Click me</button>
+
+<br>
+
+<p id="my-text">Hello, World</p>
+
+<button onclick="changeText()">Click me!</button>
+
+
 <br/>
 <!--this is what we call a tag, this is an h1 tag = header 1-->
-    <h4>Here's the final result
-        <a href="https://www.roundtablepizza.com/" target="_blank" class="pepperoni">Here is where I got the recipe!
+    <h4 class="header">Here's the final result
+        
     
-            <a href="https://www.food.com/recipe/easy-and-quick-homemade-pizza-22754/" target="_blank" class="bacon">Also here!</a>
-        </a>   
+
+          
     </h4>
     <!--Target by default opens the new page within the same window
     target= _self   it will openthe new link in the same tab window that you're in
@@ -92,11 +127,11 @@ _parent - Opens the document in the parent frame
 _top - Opens the document in the full body of the window   -->
     <img src="./images/pizzzzzzzzzza.jpg"
      alt="pizza image in all of its deliciousness"/>
-     <img src="https://images.pexels.com/photos/4109111/pexels-photo-4109111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-        alt="more pizza"/>
+    <!-- <img src="https://images.pexels.com/photos/4109111/pexels-photo-4109111.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="more pizza"/> -->
 
      <br/>
-     <h3>Here are steps to create our amazing pizza!</h3>
+     <h3 class="header">Here are steps to create our amazing pizza!</h3>
     
      <ol>
         <li>In large bowl, mix first 4 ingredients.</li>
